@@ -1,39 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>GeeksforGeeks</title>
-    <script src=
-"https://cdn.tailwindcss.com/3.4.16">
-    </script>
-</head>
-<body class="bg-black">
-    <div style="text-align:center">
-        <h1 class="text-green-600 text-3xl 
-            font-bold">
-            GeeksforGeeks
-        </h1>
-        <h3 class="text-xl text-white">
-            Full Screen Background Video in Tailwind CSS
-        </h3>
-    </div>
-    <header class="relative flex items-center 
-            justify-center h-screen mb-12 
-            overflow-hidden">
-        <a href=
-"https://www.geeksforgeeks.org/"
-           class="relative z-30 p-5 text-2xl 
-           text-white bg-green-400 bg-opacity-50
-           rounded-xl">
-           GeeksforGeeks
-        </a>
-        <video autoplay loop muted
-            class="absolute z-10 w-auto 
-            min-w-full min-h-full max-w-none">
-            <source src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221105184949/ezgif.com-gif-maker.mp4"
-                type="video/mp4"/>
+function videoui() {
+  return (
+    <>
+      {/* Main Content */}
+      <div className="relative w-full h-screen overflow-hidden">
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 object-cover w-full h-full"
+        >
+          <source src="./videos/dentist.mp4" type="video/mp4" />
         </video>
-    </header>
-</body>
-</html>
+
+        {/* Overlay Div */}
+        <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-white bg-black bg-opacity-50 text-center px-6">
+          <div className="space-y-4 md:space-y-6">
+            {/* Main Heading */}
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
+              Dental Huas
+            </h1>
+            {/* Subheading */}
+            <p className="text-lg md:text-xl lg:text-2xl font-light">
+              ดูแลรอยยิ้มของคุณด้วยความเชี่ยวชาญ
+            </p>
+            {/* Appointment Button */}
+            <a href="https://sites.google.com/d/1oSQ4_fWQ4vcmQmMYQJa7PP4wpFZ8VnXu/p/1NIv8FqH89cgnUadMUetBcU61_mFRwZ23/edit">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 mt-4 md:mt-6">
+                นัดหมายตรวจ
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default videoui;
