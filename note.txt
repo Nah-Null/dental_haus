@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>GeeksforGeeks</title>
+    <script src=
+"https://cdn.tailwindcss.com/3.4.16">
+    </script>
+</head>
+<body class="bg-black">
+    <div style="text-align:center">
+        <h1 class="text-green-600 text-3xl 
+            font-bold">
+            GeeksforGeeks
+        </h1>
+        <h3 class="text-xl text-white">
+            Full Screen Background Video in Tailwind CSS
+        </h3>
+    </div>
+    <header class="relative flex items-center 
+            justify-center h-screen mb-12 
+            overflow-hidden">
+        <a href=
+"https://www.geeksforgeeks.org/"
+           class="relative z-30 p-5 text-2xl 
+           text-white bg-green-400 bg-opacity-50
+           rounded-xl">
+           GeeksforGeeks
+        </a>
+        <video autoplay loop muted
+            class="absolute z-10 w-auto 
+            min-w-full min-h-full max-w-none">
+            <source src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221105184949/ezgif.com-gif-maker.mp4"
+                type="video/mp4"/>
+        </video>
+    </header>
+</body>
+</html>
