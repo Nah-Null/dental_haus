@@ -8,51 +8,64 @@ function Index() {
         <Navbar />
       </div>
 
-      {/* Section */}
-      <header className="relative h-screen w-full overflow-hidden pt-20">
-        {/* Video Background */}
+      {/* Main Content */}
+      <div className="relative w-full" style={{ height: '600px' }}>
+        {/* Background Video */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 object-cover"
+          style={{
+            width: '100%',
+            height: '600px'
+          }}
         >
-          <source src="/videos/dentist.mp4" type="video/mp4" />
+          <source src="./videos/dentist.mp4" type="video/mp4" />
         </video>
 
-        {/* Dark Overlay for better text visibility */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-
-        {/* Overlay Content */}
-        <div 
-          className="relative z-30 flex items-center justify-center h-full" 
-          style={{ zIndex: 9999 }}
+        {/* Overlay Div */}
+        <div
+          className="bg-opacity-50 flex items-center justify-center"
+          style={{ position: 'absolute', top: 200, left: 320, width: '50%', height: '50%' }}
         >
-          <div className="text-center px-6">
-            {/* Main Heading */}
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl">
-              GeeksforGeeks
-            </h1>
-            
-            {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-lg max-w-2xl mx-auto">
-              Your Gateway to Programming Excellence
-            </p>
-            
-            {/* Call to Action Button */}
-            <a
-              href="#"
-              className="inline-block px-8 py-4 text-lg font-semibold text-white bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          <div className="text-center text-white px-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4"
+              style={{
+                position: 'absolute',
+                top: '50px',
+                right: '100px',
+                padding: '12px 24px'
+              }}
             >
-              Get Started
+              คลินิกทันตกรรม
+            </h1>
+            <p className="text-lg md:text-xl mb-6"
+              style={{
+                position: 'absolute',
+                top: '150px',
+                right: '155px',
+                padding: '12px 24px'
+              }}
+            >
+              ดูแลรอยยิ้มของคุณด้วยความเชี่ยวชาญ
+            </p>
+            <a href="https://sites.google.com/d/1oSQ4_fWQ4vcmQmMYQJa7PP4wpFZ8VnXu/p/1NIv8FqH89cgnUadMUetBcU61_mFRwZ23/edit">
+              <button
+              className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300"
+              style={{
+                position: 'absolute',
+                top: '250px',
+                right: '250px',
+                padding: '12px 24px'
+              }}
+            >
+              นัดหมายตรวจ
+            </button>
             </a>
           </div>
         </div>
-      </header>
-
-      <div className="">
-        <img src="./img/2258187.jpg" alt="dentist" className="w-1/5" />
       </div>
     </>
   );
