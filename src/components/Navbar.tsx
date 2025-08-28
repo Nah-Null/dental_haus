@@ -12,7 +12,7 @@ const Navbar = () => {
           />
         </Link>
         <button 
-          className="navbar-toggler" 
+          className="navbar-toggler me-3" 
           type="button" 
           data-bs-toggle="collapse" 
           data-bs-target="#navbarNav" 
@@ -23,17 +23,11 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
+          <ul className="navbar-nav ms-auto me-4">
+            <li className="nav-item me-2">
               <a className="nav-link active" aria-current="page" href="#">หน้าแรก</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">โปรโมชั่น</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">ผลงานของเรา</a>
-            </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown me-3">
               <a 
                 className="nav-link dropdown-toggle" 
                 href="#" 
@@ -48,6 +42,12 @@ const Navbar = () => {
                 <li><a className="dropdown-item" href="#">ทันตกรรมความงาม</a></li>
                 <li><a className="dropdown-item" href="#">ฟันปลอม</a></li>
               </ul>
+            </li>
+            <li className="nav-item me-2">
+              <a className="nav-link" href="#">โปรโมชั่น</a>
+            </li>
+            <li className="nav-item me-2">
+              <a className="nav-link" href="#">ผลงานของเรา</a>
             </li>
           </ul>
         </div>
