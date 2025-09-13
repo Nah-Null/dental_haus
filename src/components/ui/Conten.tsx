@@ -1,4 +1,3 @@
-import React from 'react';
 import './css/Conten.css'; // Import the CSS file
 import Our_Serviec from './Our_Service';
 

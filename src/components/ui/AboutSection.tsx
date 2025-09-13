@@ -1,4 +1,3 @@
-import React from 'react';
 import './css/AboutSection.css'; // Import the CSS file
 
 const AboutSection = () => {

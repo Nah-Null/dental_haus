@@ -29,11 +29,11 @@ const Navbar = () => {
   }, [mobileMenuOpen]);
 
 
-  const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+  // const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
 
-const toggleSubmenu = (name: string) => {
-  setActiveSubmenu(activeSubmenu === name ? null : name);
-};
+// const toggleSubmenu = (name: string) => {
+//   setActiveSubmenu(activeSubmenu === name ? null : name);
+// };
 
 
   // กำหนดขนาดตามหน้าจอ
@@ -48,13 +48,13 @@ const toggleSubmenu = (name: string) => {
 
   const responsiveClass = getResponsiveClasses();
 
-  const handleDropdownToggle = (dropdownName) => {
-    setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
-  };
+  // const handleDropdownToggle = (dropdownName) => {
+  //   setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+  // };
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
+  // const toggleMobileMenu = () => {
+  //   setMobileMenuOpen(!mobileMenuOpen);
+  // };
 
   return (
     <>

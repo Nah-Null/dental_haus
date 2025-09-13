@@ -1,4 +1,3 @@
-import React from 'react';
 import './css/Our_Service.css'; // Import the CSS file
 
 const Our_Serviec = () => {
