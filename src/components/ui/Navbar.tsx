@@ -20,7 +20,7 @@ const Navbar = () => {
       // ปิด mobile menu เมื่อขยายหน้าจอ
       if (window.innerWidth > 991 && mobileMenuOpen) {
         setMobileMenuOpen(false);
-        setActiveDropdown(null);
+        // setActiveDropdown(null);
       }
     };
 
