@@ -88,12 +88,12 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto me-4">
               <li className="nav-item me-2">
-                <a className="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+                <a className="nav-link active" aria-current="page" href="/">หน้าแรก</a>
               </li>
               <li className="nav-item dropdown me-3">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="/Service"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -101,22 +101,22 @@ const Navbar = () => {
                   บริการ
                 </a>
 <ul className="dropdown-menu">
-    <li><a className="dropdown-item" href="#">จัดฟัน</a></li>
+    <li><a className="dropdown-item" href="/Service">จัดฟัน</a></li>
     {/* <ul className="dropdown-menu" aria-labelledby="bracesDropdown">
       <li><a className="dropdown-item" href="#">จัดฟันโลหะ</a></li>
       <li><a className="dropdown-item" href="#">จัดฟันเซรามิก</a></li>
       <li><a className="dropdown-item" href="#">จัดฟันใส Invisalign</a></li>
     </ul> */}
-  <li><a className="dropdown-item" href="#">ทันตกรรมความงาม</a></li>
-  <li><a className="dropdown-item" href="#">ฟันปลอม</a></li>
+  <li><a className="dropdown-item" href="/Service">ทันตกรรมความงาม</a></li>
+  <li><a className="dropdown-item" href="/Service">ฟันปลอม</a></li>
 </ul>
 
               </li>
               <li className="nav-item me-2">
-                <a className="nav-link" href="#">โปรโมชั่น</a>
+                <a className="nav-link" href="/Promotion">โปรโมชั่น</a>
               </li>
               <li className="nav-item me-2">
-                <a className="nav-link" href="#">ผลงานของเรา</a>
+                <a className="nav-link" href="/Workmanship">ผลงานของเรา</a>
               </li>
             </ul>
           </div>
