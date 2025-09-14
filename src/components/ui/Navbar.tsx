@@ -69,7 +69,7 @@ const Navbar = () => {
             />
             {screenSize.width > 575 && (
               <span className="ms-2 fw-bold text-primary">
-                {screenSize.width > 768 ? 'Dental Haus' : 'Toothbox'}
+                {screenSize.width > 768 ? 'Dental Haus' : 'Dental Haus'}
               </span>
             )}
           </Link>
