@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
             <ul>
               <li><a href="https://www.facebook.com/DentalHausChaengWatthana" target="_blank" rel="noopener noreferrer">Facebook</a></li>
               <li><a href="https://page.line.me/deo8329f" target="_blank" rel="noopener noreferrer">LINE</a></li>
-              <li><a href="tel:0969159391">โทร: 096-915-9391</a></li>
+              <li><a href="tel:0969159391">โทร: 061-356-5887</a></li>
             </ul>
           </div>
         </div>
