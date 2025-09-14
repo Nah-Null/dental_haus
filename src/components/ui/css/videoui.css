@@ -1,0 +1,56 @@
+.about-section {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+/* วิดีโอพื้นหลัง */
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* 🔥 เอา overlay ออก หรือโปร่งใสสนิท */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* โปร่งใส */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff; /* ใช้สีขาวเพื่อให้ตัดกับวิดีโอ */
+}
+
+.content h2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #000000;
+}

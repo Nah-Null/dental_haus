@@ -1,22 +1,32 @@
-function VideoUI() {
+import './css/videoui.css';
+import Bon from './Button';
+
+const VideoUI = () => {
   return (
-    <>
-<div className="relative w-full h-screen flex justify-center items-center">
-  <div className="w-[10%] min-w-[10px] aspect-video relative">
-    <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      className="absolute top-0 left-0 w-full h-full object-cover rounded-xl shadow-lg"
-      style={{width: '100%', height: '70%'}}
-    >
-      <source src="/videos/dentist.mp4" type="video/mp4" />
-    </video>
-  </div>
-</div>
-    </>
+    <div className="about-section text-black">
+      {/* วิดีโอพื้นหลัง */}
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src="videos/dentist.mp4" type="video/mp4" />
+      </video>
+
+
+      {/* เนื้อหาที่อยู่ด้านบน */}
+      <div className="content">
+        <h2>Dental Haus</h2>
+        <h3>คลินิกทันตกรรมเดนทัลเฮาส์ Dental Haus แจ้งวัฒนะ ทำฟัน จัดฟัน รากเทียม</h3>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            width: '100vw'         // เต็มความกว้างหน้าจอ
+          }}
+        >
+          <Bon name="นัดหมายพบทันตแพท" onClick={() => console.log('Play clicked')} />
+        </div>
+
+      </div>
+    </div>
   );
-}
+};
 
 export default VideoUI;
