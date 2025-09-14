@@ -21,7 +21,7 @@ const VideoUI = () => {
             width: '100vw'         // เต็มความกว้างหน้าจอ
           }}
         >
-          <Bon name="นัดหมายพบทันตแพท" onClick={() => console.log('Play clicked')} />
+          <Bon name="นัดหมายพบทันตแพท" onClick={() => alert("ทดสอบการกดปุ่ม")} />
         </div>
 
       </div>
